@@ -18,7 +18,7 @@ function makeGrid(number) {
     for (let i = 0; i < size; i ++) {
         let square = document.createElement("div");
         pad.appendChild(square);
-        square.style.cssText = "border: 1px solid black; border-radius: 10px;"
+        square.style.cssText = "border: 1px solid grey; border-radius: 10px;"
     }
 }
 

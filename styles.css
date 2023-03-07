@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&display=swap');
 
 body {
     margin: 0;
-    font-family: 'Happy Monkey', cursive;
-    background-color: #6F1D1B;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #BC4749;
+    background-image: linear-gradient(to bottom right, #BC4749, #F2E8CF);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 h1 {
@@ -12,11 +15,10 @@ h1 {
 }
 
 header {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    background-color: #6F1D1B;
-    border-bottom: 10px ridge darkred;
-    color: yellow;
+    color: #F2E8CF;
     padding: 10px 0;
     font-size: 24px;
 }
@@ -32,29 +34,24 @@ header {
 }
 
 button {
-    font-family: 'Happy Monkey', cursive;
+    font-family: 'DM Sans', sans-serif;
     border-radius: 18px;
     padding: 0 10px;
     font-size: 16px;
 }
 
-.sizes button {
-    background-color: #FFE6A7;
-    border: 2px ridge #FFE6A7;
+button {
+    background-color: #A7C957;
+    border: 2px solid #FFE6A7;
 }
 
-.functions button {
-    background-color: #FFE6A7;
-    border: 2px ridge #FFE6A7;
-}
 
 .bx {
     padding: 2px;
 }
 
 button:hover {
-    background-color: gray;
-    border-color: gray;
+    background-color: #6A994E;
 }
 
 main {
@@ -64,11 +61,12 @@ main {
 }
 
 .container {
+    margin-bottom: 3px;
     display: grid;
     grid-template-columns: auto auto auto;
-    border: 10px double #6F1D1B;
+    border: 10px double #6A994E;
     border-radius: 20px;
     width: 320px;
     height: 320px;
-    background-color: gray;
+    background-color: #F2E8CF;
 }

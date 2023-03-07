@@ -23,7 +23,12 @@ function makeGrid(num) {
         square.style.cssText = "border: 1px solid grey; border-radius: 10px;"
         pad.appendChild(square).className = "grid-items";
     }
+
+    // adding event listener to each divs
+    let squarePixels = pad.querySelectorAll(".grid-items");
+    squarePixels.forEach(squarePixel => squarePixel.addEventListener("mousedown", ))
 }
+
 
 function rainbowMode() {
 

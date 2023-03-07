@@ -25,7 +25,7 @@ function makeGrid(num) {
     }
 }
 
-
+// generate random color by given pallete
 function chooseRandomColor() {
     let pallete = ['#386641', '#6A994E', '#A7C957', '#F2E8CF', '#BC4749'];
     let randomcolorChoice = pallete[Math.floor(Math.random()*pallete.length)];
@@ -37,7 +37,7 @@ function draw() {
 }
 
 function erase() {
-    
+
 }
 
 function resetProgram() {

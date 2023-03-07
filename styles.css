@@ -5,9 +5,9 @@ body {
     font-family: 'DM Sans', sans-serif;
     background-color: #BC4749;
     background-image: linear-gradient(to bottom right, #BC4749, #F2E8CF);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
-    overflow: hidden;
+    text-decoration: none;
 }
 
 h1 {
@@ -15,8 +15,6 @@ h1 {
 }
 
 header {
-    margin: 0;
-    padding: 0;
     text-align: center;
     color: #F2E8CF;
     padding: 10px 0;
@@ -71,7 +69,6 @@ main {
 }
 
 .container {
-    margin-bottom: 3px;
     display: grid;
     grid-template-columns: auto auto auto;
     border: 10px double #6A994E;
@@ -79,4 +76,11 @@ main {
     width: 320px;
     height: 320px;
     background-color: #F2E8CF;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }

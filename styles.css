@@ -20,6 +20,13 @@ header {
     margin: 0;
 }
 
+.toptext {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 15px;
+}
+
 .sizes,
 .functions {
     display: flex;

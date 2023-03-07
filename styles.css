@@ -1,25 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 
+
 body {
+    margin: 0;
     font-family: 'Happy Monkey', cursive;
+}
+
+h1 {
     margin: 0;
 }
 
 header {
     margin: 0 auto;
     text-align: center;
+    background-color: #6F1D1B;
+    color: white;
+    padding: 10px 0;
 }
 
 .functions {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 18px;
+    gap: 8px;
+    padding: 0 10px;
 }
 
 button {
     font-family: 'Happy Monkey', cursive;
+    background-color: #FFE6A7;
+    border: 2px solid #FFE6A7;
+    border-radius: 18px;
+    padding: 0 10px;
+}
+
+button:hover {
+    background-color: #BB9457;
+    border-color: #BB9457;
 }
 
 main {

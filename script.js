@@ -25,9 +25,9 @@ function makeGrid(rows, cols) {
     }
 }
 
-// to choose any color 
-function chooseColor() {
-
+// to start drawing 
+function draw() {
+    document.querySelector(".grid-items").style.color="black";
 }
 
 function resetProgram() {

@@ -4,16 +4,16 @@ const startbtn = document.createElement("button");
 
 // size buttons
 const tinybtn = document.querySelector(".tiny").addEventListener("click", function(){makeGrid(3,3);});
-const smallbtn = document.querySelector(".small").addEventListener("click", function(){makeGrid(9,9);});
-const mediumbtn = document.querySelector(".medium").addEventListener("click", function(){makeGrid(12,12);});
-const largebtn = document.querySelector(".large").addEventListener("click", function(){makeGrid(15,15);});
-const giantbtn = document.querySelector(".giant").addEventListener("click", function(){makeGrid(18,18);});
+const smallbtn = document.querySelector(".small").addEventListener("click", function(){makeGrid(6,6);});
+const mediumbtn = document.querySelector(".medium").addEventListener("click", function(){makeGrid(9,9);});
+const largebtn = document.querySelector(".large").addEventListener("click", function(){makeGrid(12,12);});
+const giantbtn = document.querySelector(".giant").addEventListener("click", function(){makeGrid(15,15);});
 
 // tools buttons
 const rainbowbtn = document.querySelector(".rainbowmode");
 const drawbtn = document.querySelector(".drawbtn");
 const eraserbtn = document.querySelector(".eraser");
-const resetbtn = document.querySelector(".reset");
+const resetbtn = document.querySelector(".reset").addEventListener("click", resetProgram);
 
 // to make squares inside the grid
 function makeGrid(rows, cols) {
@@ -28,4 +28,8 @@ function makeGrid(rows, cols) {
 // to choose any color 
 function chooseColor() {
 
+}
+
+function resetProgram() {
+    window.location.reload();
 }

@@ -2,13 +2,27 @@
 
 body {
     font-family: 'Alegreya', serif;
+    margin: 0;
+}
+
+header {
     margin: 0 auto;
+    background-color: ;
+}
+
+.functions {
+    display: flex;
+    gap: 28px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
 .container {
-    margin: 0 auto;
+    align-self: center;
     border: 10px solid black;
-    display: flex;
     width: 100px;
     height: 100px;
 }

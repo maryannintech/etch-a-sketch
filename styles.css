@@ -24,7 +24,7 @@ header {
     margin: 0;
     padding: 0;
     color: black;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .sizes,
@@ -50,11 +50,9 @@ button {
     border-radius: 18px;
     padding: 0 10px;
     font-size: 16px;
-}
-
-button {
     background-color: #A7C957;
     border: 2px solid #F2E8CF;
+    margin: 0;
 }
 
 .bx {
@@ -67,6 +65,8 @@ button:hover {
 
 main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin: 18px 0;
 }

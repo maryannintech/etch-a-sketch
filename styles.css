@@ -33,6 +33,16 @@ header {
     padding: 0 10px;
 }
 
+.rainbowmode:hover {
+    background-image: linear-gradient(to right, red,yellow,green,blue,indigo);
+    color: white;
+    background-color: #6A994E;
+}
+
+.reset:hover {
+    background-color: red;
+}
+
 button {
     font-family: 'DM Sans', sans-serif;
     border-radius: 18px;
@@ -42,7 +52,7 @@ button {
 
 button {
     background-color: #A7C957;
-    border: 2px solid #FFE6A7;
+    border: 2px solid #F2E8CF;
 }
 
 

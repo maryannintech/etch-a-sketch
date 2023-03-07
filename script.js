@@ -5,6 +5,7 @@ function makeGrid(num) {
     sizesbtns = document.querySelector(".sizes");
 
     const size = num **2;
+    // to make use of all the columns and rows
     pad.style.gridTemplateColumns = `repeat(${num}, 1fr)`;
     pad.style.gridTemplateRows = `repeat(${num}, 1fr)`;
     for (let i = 0; i < size; i ++) {

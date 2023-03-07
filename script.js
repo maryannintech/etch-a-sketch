@@ -10,12 +10,12 @@ const largebtn = document.querySelector(".large").addEventListener("click", func
 const giantbtn = document.querySelector(".giant").addEventListener("click", function(){makeGrid(15);});
 
 // tools buttons
-const rainbowbtn = document.querySelector(".rainbowmode");
-const drawbtn = document.querySelector(".drawbtn");
-const eraserbtn = document.querySelector(".eraser");
+const rainbowbtn = document.querySelector(".rainbowmode").addEventListener("click", rainbowMode);
+const drawbtn = document.querySelector(".drawbtn").addEventListener("click", draw);
+const eraserbtn = document.querySelector(".eraser").addEventListener("click", erase);
 const resetbtn = document.querySelector(".reset").addEventListener("click", resetProgram);
 
-// to make squares inside the grid
+// to make divs inside the container
 function makeGrid(num) {
     let size = num **2;
     for (let i = 0; i < size; i ++) {
@@ -25,8 +25,16 @@ function makeGrid(num) {
     }
 }
 
-// user select  
 function rainbowMode() {
+
+}
+
+// to let user draw 
+function draw() {
+
+}
+
+function erase() {
 
 }
 

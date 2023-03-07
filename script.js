@@ -10,7 +10,7 @@ const largebtn = document.querySelector(".large").addEventListener("click", () =
 const giantbtn = document.querySelector(".giant").addEventListener("click", () => {makeGrid(15)});
 
 // tools buttons
-const rainbowbtn = document.querySelector(".rainbowmode");
+const rainbowbtn = document.querySelector(".randommode");
 const drawbtn = document.querySelector(".drawbtn");
 const eraserbtn = document.querySelector(".eraser");
 const resetbtn = document.querySelector(".reset").addEventListener("click", resetProgram);
@@ -26,12 +26,9 @@ function makeGrid(num) {
 }
 
 
-function rainbowMode() {
-    let r = Math.floor(Math.random() * 255);
-    let g = Math.floor(Math.random() * 255);
-    let b = Math.floor(Math.random() * 255);
-    `rgb()`
-
+function chooseRandomColor() {
+    let pallete = ['#386641', '#6A994E', '#A7C957', '#F2E8CF', '#BC4749'];
+    let randomcolorChoice = pallete[Math.floor(Math.random()*pallete.length)];
 }
 
 // to let user draw 
@@ -40,7 +37,7 @@ function draw() {
 }
 
 function erase() {
-
+    
 }
 
 function resetProgram() {

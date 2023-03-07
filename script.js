@@ -3,11 +3,11 @@ const pad = document.querySelector(".container");
 const startbtn = document.createElement("button");
 
 // size buttons
-const xsmallbtn = document.querySelector(".xsmall").addEventListener("click", function(){makeGrid(4,4);});
-const smallbtn = document.querySelector(".small");
-const mediumbtn = document.querySelector(".medium");
-const largebtn = document.querySelector(".large");
-const xlargebtn = document.querySelector(".xlarge");
+const tinybtn = document.querySelector(".tiny").addEventListener("click", function(){makeGrid(3,3);});
+const smallbtn = document.querySelector(".small").addEventListener("click", function(){makeGrid(9,9);});
+const mediumbtn = document.querySelector(".medium").addEventListener("click", function(){makeGrid(12,12);});
+const largebtn = document.querySelector(".large").addEventListener("click", function(){makeGrid(15,15);});
+const giantbtn = document.querySelector(".giant").addEventListener("click", function(){makeGrid(18,18);});
 
 // tools buttons
 const rainbowbtn = document.querySelector(".rainbowmode");
@@ -15,13 +15,8 @@ const drawbtn = document.querySelector(".drawbtn");
 const eraserbtn = document.querySelector(".eraser");
 const resetbtn = document.querySelector(".reset");
 
-
-
-
 // to make squares inside the grid
 function makeGrid(rows, cols) {
-    pad.style.setProperty('--grid-rows', rows);
-    pad.style.setProperty('--grid-cols', cols);
     let size = rows*cols;
     for (let i = 0; i < size; i ++) {
         let square = document.createElement("div");

@@ -3,11 +3,11 @@ const pad = document.querySelector(".container");
 const startbtn = document.createElement("button");
 
 // size buttons
-const tinybtn = document.querySelector(".tiny").addEventListener("click", function(){makeGrid(3);});
-const smallbtn = document.querySelector(".small").addEventListener("click", function(){makeGrid(6);});
-const mediumbtn = document.querySelector(".medium").addEventListener("click", function(){makeGrid(9);});
-const largebtn = document.querySelector(".large").addEventListener("click", function(){makeGrid(12);});
-const giantbtn = document.querySelector(".giant").addEventListener("click", function(){makeGrid(15);});
+const tinybtn = document.querySelector(".tiny").addEventListener("click", () => {makeGrid(3)});
+const smallbtn = document.querySelector(".small").addEventListener("click", () => {makeGrid(6)});
+const mediumbtn = document.querySelector(".medium").addEventListener("click", () => {makeGrid(9)});
+const largebtn = document.querySelector(".large").addEventListener("click", () => {makeGrid(12)});
+const giantbtn = document.querySelector(".giant").addEventListener("click", () => {makeGrid(15)});
 
 // tools buttons
 const rainbowbtn = document.querySelector(".rainbowmode");
@@ -23,14 +23,14 @@ function makeGrid(num) {
         square.style.cssText = "border: 1px solid grey; border-radius: 10px;"
         pad.appendChild(square).className = "grid-items";
     }
-
-    // adding event listener to each divs
-    let squarePixels = pad.querySelectorAll(".grid-items");
-    squarePixels.forEach(squarePixel => squarePixel.addEventListener("mousedown", ))
 }
 
 
 function rainbowMode() {
+    let r = Math.floor(Math.random() * 255);
+    let g = Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
+    `rgb()`
 
 }
 

@@ -30,6 +30,7 @@ function makeGrid(rows, cols) {
     }
 }
 
+// to choose any color 
+function chooseColor() {
 
-
-
+}

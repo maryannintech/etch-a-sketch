@@ -4,10 +4,8 @@ body {
     margin: 0;
     font-family: 'DM Sans', sans-serif;
     background-color: #BC4749;
-    background-image: linear-gradient(to bottom right, #BC4749, #F2E8CF);
-    background-repeat: repeat-y;
+    background: linear-gradient(to bottom right, #BC4749, #F2E8CF);
     background-size: cover;
-    text-decoration: none;
 }
 
 h1 {
@@ -18,7 +16,8 @@ header {
     text-align: center;
     color: #F2E8CF;
     padding: 10px 0;
-    font-size: 24px;
+    font-size: 18px;
+    margin: 0;
 }
 
 .sizes,
@@ -28,17 +27,16 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 0 10px;
 }
 
 .rainbowmode:hover {
-    background-image: linear-gradient(to right, red,yellow,green,blue,indigo);
+    background: linear-gradient(to right, red,yellow,green,blue,indigo);
     color: white;
     background-color: #6A994E;
 }
 
 .reset:hover {
-    background-color: red;
+    background-color: #BC4749;
 }
 
 button {
@@ -53,7 +51,6 @@ button {
     border: 2px solid #F2E8CF;
 }
 
-
 .bx {
     padding: 2px;
 }
@@ -65,7 +62,7 @@ button:hover {
 main {
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 .container {
@@ -82,5 +79,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
+}
+
+a {
+    text-decoration: none;
     color: black;
 }

@@ -4,7 +4,7 @@
 body {
     margin: 0;
     font-family: 'Happy Monkey', cursive;
-    background-color: #FFE6A7;
+    background-color: #6F1D1B;
 }
 
 h1 {
@@ -16,10 +16,12 @@ header {
     text-align: center;
     background-color: #6F1D1B;
     border-bottom: 10px ridge darkred;
-    color: white;
+    color: yellow;
     padding: 10px 0;
+    font-size: 24px;
 }
 
+.sizes,
 .functions {
     display: flex;
     justify-content: center;
@@ -31,10 +33,23 @@ header {
 
 button {
     font-family: 'Happy Monkey', cursive;
-    background-color: #FFE6A7;
-    border: 2px ridge #FFE6A7;
     border-radius: 18px;
     padding: 0 10px;
+    font-size: 16px;
+}
+
+.sizes button {
+    background-color: #FFE6A7;
+    border: 2px ridge #FFE6A7;
+}
+
+.functions button {
+    background-color: #FFE6A7;
+    border: 2px ridge #FFE6A7;
+}
+
+.bx {
+    padding: 2px;
 }
 
 button:hover {
@@ -50,8 +65,10 @@ main {
 
 .container {
     display: grid;
+    grid-template-columns: auto auto auto;
     border: 10px double #6F1D1B;
     border-radius: 20px;
-    width: 500px;
-    height: 500px;
+    width: 320px;
+    height: 320px;
+    background-color: gray;
 }

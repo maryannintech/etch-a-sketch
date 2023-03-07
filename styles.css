@@ -4,6 +4,7 @@
 body {
     margin: 0;
     font-family: 'Happy Monkey', cursive;
+    background-color: #FFE6A7;
 }
 
 h1 {
@@ -14,12 +15,14 @@ header {
     margin: 0 auto;
     text-align: center;
     background-color: #6F1D1B;
+    border-bottom: 10px ridge darkred;
     color: white;
     padding: 10px 0;
 }
 
 .functions {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 8px;
@@ -29,26 +32,26 @@ header {
 button {
     font-family: 'Happy Monkey', cursive;
     background-color: #FFE6A7;
-    border: 2px solid #FFE6A7;
+    border: 2px ridge #FFE6A7;
     border-radius: 18px;
     padding: 0 10px;
 }
 
 button:hover {
-    background-color: #BB9457;
-    border-color: #BB9457;
+    background-color: gray;
+    border-color: gray;
 }
 
 main {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 .container {
-    align-self: center;
-    justify-content: center;
-    border: 10px solid black;
-    width: 100px;
-    height: 100px;
+    display: grid;
+    border: 10px double #6F1D1B;
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
 }

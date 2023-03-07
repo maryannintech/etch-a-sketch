@@ -12,6 +12,7 @@ const xlargebtn = document.querySelector(".xlarge");
 function makeGrid(number) {
     for (let i = 0; i < 256; i ++) {
         let square = document.createElement("div");
+        square.style.cssText = "border: 2px black solid;"
         pad.appendChild(square);
     }
 }

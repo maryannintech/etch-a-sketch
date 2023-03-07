@@ -10,9 +10,9 @@ const largebtn = document.querySelector(".large").addEventListener("click", func
 const giantbtn = document.querySelector(".giant").addEventListener("click", function(){makeGrid(15);});
 
 // tools buttons
-const rainbowbtn = document.querySelector(".rainbowmode").addEventListener("click", rainbowMode);
-const drawbtn = document.querySelector(".drawbtn").addEventListener("click", draw);
-const eraserbtn = document.querySelector(".eraser").addEventListener("click", erase);
+const rainbowbtn = document.querySelector(".rainbowmode");
+const drawbtn = document.querySelector(".drawbtn");
+const eraserbtn = document.querySelector(".eraser");
 const resetbtn = document.querySelector(".reset").addEventListener("click", resetProgram);
 
 // to make divs inside the container

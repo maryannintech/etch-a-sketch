@@ -19,13 +19,13 @@ function makeGrid(num) {
         pad.appendChild(square).className = "grid-items";
     }
 
-    // to hide size buttons and text after the user chose
+    // to hide size buttons and text after the user chose the size
     bottomtexthide.style.visibility = "hidden";
     sizesbtns.style.visibility = "hidden";
 
 }
 
-// to generate random color according to array pallete
+// to generate random color according to array palette
 function getRandomColor() {
     const palette = ['D4E09B', '723D46', 'CBDFBD', 'F19C79', 'A44A3F'];
     let randomColor = palette[Math.floor(Math.random()*palette.length)];

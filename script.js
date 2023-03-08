@@ -32,13 +32,14 @@ function getRandomColor() {
     return `#${randomColor}`;
 }
 
-// drawing tools
+// drawing buttons
 const randomColor = document.querySelector(".randommode").addEventListener("click", () => {drawingTools("random")});
 const drawbtn = document.querySelector(".draw").addEventListener("click", () => {drawingTools("color")});
 
-// each function of drawing tools
+// each function of drawing buttons
 function drawingTools(tools) {
     const grids = pad.querySelectorAll(".grid-items");
+    // selecting each grid item
     if (tools === 'random') {
         grids.forEach((grid) => {
             grid.addEventListener("mousemove", () => {
@@ -47,7 +48,6 @@ function drawingTools(tools) {
         })
     }
     else if (tools === 'color') {
-        // selecting each square item
         grids.forEach((grid) => {
             grid.addEventListener("mousemove", () => {
                 grid.style.backgroundColor = "pink";
@@ -70,6 +70,7 @@ function erase() {
 }
 
 function resetProgram() {
+    // to reset the program
     window.location.reload();
 }
 

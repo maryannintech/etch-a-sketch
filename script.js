@@ -1,9 +1,14 @@
+// sizes buttons
+const smallbtn = document.querySelector(".small").addEventListener("click", () => {makeGrid(6)});
+const mediumbtn = document.querySelector(".medium").addEventListener("click", () => {makeGrid(9)});
+const largebtn = document.querySelector(".large").addEventListener("click", () => {makeGrid(12)});
+
+const pad = document.querySelector(".container");
 function makeGrid(num) {
-    const pad = document.querySelector(".container");
     const bottomtexthide = document.querySelector(".bottomtext");
     const sizesbtns = document.querySelector(".sizes");
-
     const size = num **2;
+
     // to make use of all the columns and rows
     pad.style.gridTemplateColumns = `repeat(${num}, 1fr)`;
     pad.style.gridTemplateRows = `repeat(${num}, 1fr)`;
@@ -18,44 +23,54 @@ function makeGrid(num) {
     bottomtexthide.style.visibility = "hidden";
     sizesbtns.style.visibility = "hidden";
 
-    // selecting each square item
-    const squareItems = pad.querySelectorAll(".grid-items");
-    squareItems.forEach((item) => {
-        item.addEventListener("mousemove", () => {
-            item.style.backgroundColor = "pink";
-        })
-    })
 }
 
+// to generate random color according to array pallete
+function getRandomColor() {
+    const pallete = ['386641', '6A994E', 'A7C957', 'F2E8CF', 'BC4749'];
+    let randomColor = pallete[Math.floor(Math.random()*pallete.length)];
+    return `#${randomColor}`;
+}
 
-// to let user draw 
+// drawing tools
+const randomColor = document.querySelector(".randommode").addEventListener("click", () => {drawingTools("random")});
+const drawbtn = document.querySelector(".draw").addEventListener("click", () => {drawingTools("color")});
+
+// each function of drawing tools
 function drawingTools(tools) {
+    const grids = pad.querySelectorAll(".grid-items");
     if (tools === 'random') {
-        let pallete = ['#386641', '#6A994E', '#A7C957', '#F2E8CF', '#BC4749'];
-        let randomColor = pallete[Math.floor(Math.random()*pallete.length)];
-        //e.target.style.backgroundColor = `rgb(${randomColor}, ${randomColor}, ${randomColor})`;
+        grids.forEach((grid) => {
+            grid.addEventListener("mousemove", () => {
+                grid.style.backgroundColor = getRandomColor();
+            })
+        })
     }
     else if (tools === 'color') {
-        
+        // selecting each square item
+        grids.forEach((grid) => {
+            grid.addEventListener("mousemove", () => {
+                grid.style.backgroundColor = "pink";
+            })
+        })
     }
 }
 
-function erase() {
+// tools buttons
+const eraserbtn = document.querySelector(".eraser").addEventListener("click", erase);
+const resetbtn = document.querySelector(".reset").addEventListener("click", resetProgram);
 
+function erase() {
+    const cells = pad.querySelectorAll(".grid-items");
+    cells.forEach((cell) => {
+        cell.addEventListener("mousemove", () => {
+            cell.style.backgroundColor = "";
+        })
+    })
 }
 
 function resetProgram() {
     window.location.reload();
 }
 
-// tools buttons
-const randomColor = document.querySelector(".randommode").addEventListener("click", drawingTools("random"));
-const drawbtn = document.querySelector(".draw").addEventListener("click", drawingTools("color"));
-const eraserbtn = document.querySelector(".eraser").addEventListener("click", erase);
-const resetbtn = document.querySelector(".reset").addEventListener("click", resetProgram);
-
-// size buttons
-const smallbtn = document.querySelector(".small").addEventListener("click", () => {makeGrid(6)});
-const mediumbtn = document.querySelector(".medium").addEventListener("click", () => {makeGrid(9)});
-const largebtn = document.querySelector(".large").addEventListener("click", () => {makeGrid(12)});
 

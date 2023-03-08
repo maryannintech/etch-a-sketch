@@ -1,7 +1,7 @@
 // to make divs inside the container
 function makeGrid(num) {
     const pad = document.querySelector(".container");
-    toptexthide = document.querySelector(".toptext");
+    bottomtexthide = document.querySelector(".bottomtext");
     sizesbtns = document.querySelector(".sizes");
 
     const size = num **2;
@@ -14,7 +14,7 @@ function makeGrid(num) {
         pad.appendChild(square).className = "grid-items";
     }
 
-    toptexthide.style.visibility = "hidden";
+    bottomtexthide.style.visibility = "hidden";
     sizesbtns.style.visibility = "hidden";
 
     // selecting each square item

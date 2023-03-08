@@ -21,11 +21,11 @@ header {
     margin: 0;
 }
 
-.toptext {
+.bottomtext {
     margin: 0;
     padding: 0;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .sizes,
@@ -70,6 +70,7 @@ main {
     align-items: center;
     justify-content: center;
     margin: 0 0;
+    color: #BC4749;
 }
 
 .container {

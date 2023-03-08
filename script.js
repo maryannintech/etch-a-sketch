@@ -27,8 +27,8 @@ function makeGrid(num) {
 
 // to generate random color according to array pallete
 function getRandomColor() {
-    const pallete = ['D4E09B', '723D46', 'CBDFBD', 'F19C79', 'A44A3F'];
-    let randomColor = pallete[Math.floor(Math.random()*pallete.length)];
+    const palette = ['D4E09B', '723D46', 'CBDFBD', 'F19C79', 'A44A3F'];
+    let randomColor = palette[Math.floor(Math.random()*palette.length)];
     return `#${randomColor}`;
 }
 

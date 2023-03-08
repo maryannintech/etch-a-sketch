@@ -6,6 +6,7 @@ body {
     background-color: #BC4749;
     background: linear-gradient(to bottom right, #BC4749, #F2E8CF);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {

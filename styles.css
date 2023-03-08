@@ -22,13 +22,6 @@ header {
     margin: 0;
 }
 
-.bottomtext {
-    margin: 0;
-    padding: 0;
-    color: black;
-    font-size: 18px;
-}
-
 .sizes,
 .functions {
     display: flex;
@@ -82,6 +75,13 @@ main {
     width: 320px;
     height: 320px;
     background-color: #F2E8CF;
+}
+
+.bottomtext {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 18px;
 }
 
 footer {

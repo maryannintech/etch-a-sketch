@@ -38,8 +38,10 @@ const drawbtn = document.querySelector(".draw").addEventListener("click", () => 
 
 // each function of drawing buttons
 function drawingTools(tools) {
-    const grids = pad.querySelectorAll(".grid-items");
     // selecting each grid item
+    const grids = pad.querySelectorAll(".grid-items");
+    const colorpickerCanvas = document.querySelector(".colorpicker")
+
     if (tools === 'random') {
         grids.forEach((grid) => {
             grid.addEventListener("mousemove", () => {
@@ -63,6 +65,7 @@ function drawingTools(tools) {
 // tools buttons
 const eraserbtn = document.querySelector(".eraser").addEventListener("click", erase);
 const resetbtn = document.querySelector(".reset").addEventListener("click", resetProgram);
+const clearbtn = document.querySelector(".clear").addEventListener("click", clearColors);
 
 function erase() {
     const cells = pad.querySelectorAll(".grid-items");
@@ -78,4 +81,10 @@ function resetProgram() {
     window.location.reload();
 }
 
+function clearColors() {
+    const cells = pad.querySelectorAll(".grid-items");
+    cells.forEach((cell) => {
+            cell.style.backgroundColor = "";
+    })
+}
 

@@ -34,11 +34,11 @@ function getRandomColor() {
 
 // drawing buttons
 const randomColor = document.querySelector(".randommode").addEventListener("click", setRandomColor);
-// to monitor color input and change
+// to monitor color input and change in the color picker
 let color = document.querySelector("#colorpicker").addEventListener("input", chooseColor, false);
 color = document.querySelector("#colorpicker").addEventListener("change", chooseColor, false);
 
-// each function of drawing buttons
+
 function setRandomColor() {
     // selecting each grid item
     const grids = pad.querySelectorAll(".grid-items");

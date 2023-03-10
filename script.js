@@ -34,7 +34,9 @@ function getRandomColor() {
 
 // drawing buttons
 const randomColor = document.querySelector(".randommode").addEventListener("click", setRandomColor);
-const drawbtn = document.querySelector(".draw").addEventListener("click", chooseColor);
+// to monitor color change
+let color = document.querySelector("#colorpicker").addEventListener("input", chooseColor, false);
+color = document.querySelector("#colorpicker").addEventListener("change", chooseColor, false);
 
 // each function of drawing buttons
 function setRandomColor() {
@@ -47,11 +49,10 @@ function setRandomColor() {
     })
 }
 
-function chooseColor() {
+function chooseColor(event) {
+    color = event.target.value;
     const grids = pad.querySelectorAll(".grid-items");
-    // getting the color value
-    let color = document.querySelector("#colorpicker").value;
-    grids.forEach((grid) => {
+     grids.forEach((grid) => {
         grid.addEventListener("mousemove", () => {
             grid.style.backgroundColor = color;
         })

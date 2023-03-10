@@ -34,7 +34,7 @@ function getRandomColor() {
 
 // drawing buttons
 const randomColor = document.querySelector(".randommode").addEventListener("click", setRandomColor);
-// to monitor color change
+// to monitor color input and change
 let color = document.querySelector("#colorpicker").addEventListener("input", chooseColor, false);
 color = document.querySelector("#colorpicker").addEventListener("change", chooseColor, false);
 

@@ -72,15 +72,17 @@ function erase() {
     })
 }
 
-function resetProgram() {
-    // to reset the program
-    window.location.reload();
-}
-
 function clearColors() {
     const cells = pad.querySelectorAll(".grid-items");
     cells.forEach((cell) => {
             cell.style.backgroundColor = "";
     })
 }
+
+function resetProgram() {
+    // to reset the program
+    window.location.reload();
+}
+
+
 

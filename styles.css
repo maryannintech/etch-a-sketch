@@ -41,6 +41,10 @@ header {
     background-color: #BC4749;
 }
 
+/*input[type="color"] {
+
+}*/
+
 button {
     font-family: 'DM Sans', sans-serif;
     border-radius: 18px;
@@ -49,6 +53,16 @@ button {
     background-color: #A7C957;
     border: 2px solid #F2E8CF;
     margin: 0;
+    cursor: pointer;
+}
+
+.draw:focus,
+.eraser:focus {
+    background-color: #6A994E;
+}
+
+.randommode:focus {
+    background: linear-gradient(to right, #D4E09B, #723D46, #F19C79, #A44A3F);
 }
 
 .bx {

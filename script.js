@@ -33,33 +33,29 @@ function getRandomColor() {
 }
 
 // drawing buttons
-const randomColor = document.querySelector(".randommode").addEventListener("click", () => {drawingTools("random")});
-const drawbtn = document.querySelector(".draw").addEventListener("click", () => {drawingTools("color")});
+const randomColor = document.querySelector(".randommode").addEventListener("click", setRandomColor);
+const drawbtn = document.querySelector(".draw").addEventListener("click", chooseColor);
 
 // each function of drawing buttons
-function drawingTools(tools) {
+function setRandomColor() {
     // selecting each grid item
     const grids = pad.querySelectorAll(".grid-items");
-    const colorpickerCanvas = document.querySelector(".colorpicker")
+     grids.forEach((grid) => {
+        grid.addEventListener("mousemove", () => {
+            grid.style.backgroundColor = getRandomColor();
+        })
+    })
+}
 
-    if (tools === 'random') {
-        grids.forEach((grid) => {
-            grid.addEventListener("mousemove", () => {
-                grid.style.backgroundColor = getRandomColor();
-            })
+function chooseColor() {
+    const grids = pad.querySelectorAll(".grid-items");
+    // getting the color value
+    let color = document.querySelector("#colorpicker").value;
+    grids.forEach((grid) => {
+        grid.addEventListener("mousemove", () => {
+            grid.style.backgroundColor = color;
         })
-    }
-    else if (tools === 'color') {
-        const colorPicker = document.createElement("input");
-        colorPicker.setAttribute("type", "color");
-        colorPicker.setAttribute("value", "#6A994E");
-        let colorchoice = colorPicker.value;
-        grids.forEach((grid) => {
-            grid.addEventListener("mousemove", () => {
-                grid.style.backgroundColor = colorchoice;
-            })
-        })
-    }
+    })
 }
 
 // tools buttons

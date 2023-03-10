@@ -48,9 +48,13 @@ function drawingTools(tools) {
         })
     }
     else if (tools === 'color') {
+        const colorPicker = document.createElement("input");
+        colorPicker.setAttribute("type", "color");
+        colorPicker.setAttribute("value", "#6A994E");
+        let colorchoice = colorPicker.value;
         grids.forEach((grid) => {
             grid.addEventListener("mousemove", () => {
-                grid.style.backgroundColor = "pink";
+                grid.style.backgroundColor = colorchoice;
             })
         })
     }
